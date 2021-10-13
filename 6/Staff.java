@@ -23,7 +23,7 @@ public abstract class Staff implements Comparable<Staff>{
 
     public int compareTo(Staff obj){
 
-        return 0;
+        return (int)(this.salary-obj.getSalary());
     }
 
 
