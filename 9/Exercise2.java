@@ -1,6 +1,10 @@
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Scanner;
+import java.util.Stack;
 import java.util.TreeMap;
 
 /* 
@@ -18,7 +22,7 @@ public class Exercise2 {
         Map<String,Integer> treeMap = new TreeMap<String,Integer>();
 
         System.out.println("Enter next character: ");
-        String letter = input.next();
+        String letter = input.next().toLowerCase();
         while(!letter.equals("0")){
 
             if(lhMap.containsKey(letter)){
@@ -31,7 +35,11 @@ public class Exercise2 {
             }
             else treeMap.put(letter,1);
 
-            letter = input.next();
+            letter = input.next().toLowerCase();
+
+            Stack<Integer> testStack = new Stack<>();
+            Queue<Integer> testQueue = new LinkedList<>(); 
+            PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
         }
 
         System.out.println("Letter occurences in original order: "+ lhMap);

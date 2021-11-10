@@ -1,7 +1,11 @@
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.TreeSet;
+
+import javax.management.Query;
 
 /* 
 There are 3 type of sets
@@ -17,6 +21,7 @@ public class Exercise1{
         Scanner input = new Scanner(System.in);
         LinkedHashSet<Integer> lhSet = new LinkedHashSet<>();
         TreeSet<Integer> treeSet = new TreeSet<>();
+        HashSet<Integer> hashSet = new HashSet<>();
 
         System.out.println("Enter integer: ");
         int number = input.nextInt();
