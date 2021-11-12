@@ -2,9 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        run("haziq",0);
+        
         // Create a list
-       /*  MyArrayList<String> list = new MyArrayList<>();
+        MyArrayList<String> list = new MyArrayList<>();
     
         // Add elements to the list
         list.add("America"); // Add it to the list
@@ -36,14 +36,7 @@ public class Main {
         System.out.print("(9) " + list + "\n(10) ");
     
         for (int i = 0; i < list.size(); i++)
-          System.out.print(list.get(i).toUpperCase() + " "); */
+          System.out.print(list.get(i).toUpperCase() + " "); 
       }
-
-    public static void run(String s, int index){
-        if(index<s.length()){
-            run(s,index+1);
-            System.out.println(s.charAt(index));
-        }
-    }
     
 }
